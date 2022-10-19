@@ -18,7 +18,7 @@ param set-default SYS_AUTOSTART 4001
 # param set-default ATT_W_ACC 0.4000
 # param set-default ATT_W_GYRO_BIAS 0.0000
 
-# param set-default SYS_HAS_MAG 0
+param set-default SYS_HAS_MAG 0
 
 # the startup tune is not great on a binary output buzzer, so disable it
 param set-default CBRK_BUZZER 782090
@@ -37,7 +37,4 @@ param set-default SER_TEL1_BAUD 57600 # for MAVLink Radio
 param set-default MAV_1_CONFIG 102 # using TELEM2<->USART1 /dev/ttyS0
 param set-default SER_TEL2_BAUD 921600 # for Onboard Computer
 
-# param set-default MAV_0_CONFIG 201 # using GPS1<->UART4
-# param set-default SER_GPS1_BAUD 57600 # for MAVLink radio
-# param set-default GPS_1_CONFIG 0 # disable GPS1 for using MAV_0
-# param set-default EKF2_MAG_TYPE 5 # none onboard MAG for EKF2
+param set-default EKF2_MAG_TYPE 5 # none onboard MAG for EKF2
